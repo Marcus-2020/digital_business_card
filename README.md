@@ -2,6 +2,11 @@
 This project was developed during the [React Course - Beginner's Tutorial for React JavaScript Library [2022]](https://www.youtube.com/watch?v=bMknfKXIFA8&t=1048s) in **YouTube**.  
 The object was to create a business card with my professional data and social media links.
 
+## Technologies Used
+
+- React
+- Node.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
