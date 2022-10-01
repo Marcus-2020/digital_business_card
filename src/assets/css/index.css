@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Inter", "system-ui";
+    height: 100vh;
+    background-color: #23252C;
+}
+
+@supports (font-variation-settings: normal) {
+    html { font-family: "Inter var", "system-ui"; }
+}
+
+@layer components {
+    .app {
+        @apply flex justify-center py-11;
+    }
+
+    .business-card {
+        max-width: 320px;
+        max-height: 870px;
+        background-color: #1A1B21;
+        @apply rounded-xl flex flex-col m-0;
+        overflow: hidden;
+    }
+
+    .business-card .b-card-info {
+        @apply flex flex-col;
+        padding-inline: 36px;
+    }
+
+    .business-card .b-card-photo {
+        width: 100%;
+        max-height: 320px;
+    }
+
+    .business-card .b-card-info .b-card-name {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .business-card .b-card-info .b-card-job {
+        @apply mt-1.5;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        color: #F3BF99;
+    }
+
+    .business-card .b-card-info .b-card-website {
+        @apply mt-2.5;
+        font-size: 11px;
+        line-height: 150%;
+        text-align: center;
+        color: #F5F5F5;
+    }
+
+    .business-card .b-card-info .b-card-buttons {
+        @apply flex justify-center gap-4 mt-4;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .business-card .b-card-info .b-card-buttons .b-card-button {
+        @apply flex justify-center items-center;
+        width: 115px;
+        height: 34px;
+    }
+
+    .business-card .b-card-info .b-card-buttons .b-card-button.email {
+        /* white */
+        background-color: #FFFFFF;
+        /* gray/300 */
+        border: 1px solid #D1D5DB;
+        /* shadow/sm */
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+    }
+
+    .business-card .b-card-info .b-card-buttons .b-card-button.email svg {
+        color: #1E1F26;
+        width: 16px;
+        height: 16px;
+    }
+
+    .business-card .b-card-info .b-card-buttons .b-card-button.linkedin {
+        color: #FFFFFF;
+        /* linkedin blue */
+        background-color: #5093E2;
+        /* shadow/sm */
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+    }
+
+    .business-card .b-card-info .b-card-buttons .b-card-button.linkedin svg {
+        width: 16px;
+        height: 16px;
+        color: #FFFFFF;
+    }
+
+    .business-card .b-card-text {
+        padding-inline: 36px;
+    }
+
+    .business-card .b-card-text .b-card-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #F5F5F5;
+        max-width: 247px;
+    }
+
+    .business-card .b-card-text .b-card-description {
+        font-size: 11px;
+        line-height: 150%;
+        color: #DCDCDC;
+        max-width: 247px;
+    }
+
+    .business-card .b-card-footer {
+        max-width: 320px;
+        max-height: 64px;
+        background-color: #161619;
+        @apply flex justify-center py-5 gap-x-6;
+    }
+
+    .business-card .b-card-footer .icon {
+        width: 25px;
+        height: 25px;
+        background-color: #918E9B;
+        @apply flex rounded-md justify-center items-center;
+    }
+
+    .business-card .b-card-footer .icon svg {
+        color: #161619;
+    }
+}
